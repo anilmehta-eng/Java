@@ -1,0 +1,29 @@
+interface A
+{
+    public void methodA();
+}
+interface B
+{
+    public void methodB();
+}
+class C implements A,B
+{
+    public void methodA()
+    {
+        System.out.println("method of class A interface");
+    }
+    public void methodB()
+    {
+        System.out.println("method of class B interface");
+    }
+}
+class Multi
+{
+    public static void main(String[] args)
+    {
+        C c=new C();
+        c.methodA();
+        c.methodB();
+        
+    }
+}
